@@ -77,8 +77,8 @@ const Home = ({ pageInfo, experiences, experience, techs, projects, project, soc
 
 export default Home;
 
-export const getStaticProps: GetStaticProps<Props> = async() => {
-  const pageInfo: PageInfo[] = await fetchPageInfo();
+export const getStaticProps: GetStaticProps = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const techs: Tech[] = await fetchTechs();
   const projects: Project[] = await fetchProjects();
@@ -92,5 +92,5 @@ export const getStaticProps: GetStaticProps<Props> = async() => {
       socials,
     },
     revalidate: 10,
-  }
+  };
 }

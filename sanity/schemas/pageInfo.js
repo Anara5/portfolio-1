@@ -49,6 +49,6 @@ export default {
       title: "Socials",
       type: "array",
       of: [{ type: "reference", to: { type: "social" } }],
-    }
+    },
   ],
 }
