@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type { NextApiRequest, NextApiResponse } from 'next';
 import { groq } from 'next-sanity';
 import { sanityClient } from '../../sanity';
 import { PageInfo } from '../../typings';
@@ -17,5 +17,5 @@ export default async function handler(
 ) {
     const pageInfo: PageInfo = await sanityClient.fetch(query);
     
-    res.status(200).json({ pageInfo })
+    res.status(200).json({ pageInfo });
 }
