@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Techs from '../components/Techs';
-import home from '../public/techimages/home.png';
+import home from '../public/home.png';
 import Image from 'next/image';
 import { Experience, PageInfo, Project, Social, Tech } from '../typings';
 import { fetchPageInfo } from '../utils/fetchPageInfo';
