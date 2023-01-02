@@ -33,11 +33,11 @@ function Contact({}: Props) {
            <div className="space-y-5">
                 <div className="flex items-center space-x-4 justify-center">
                     <EnvelopeIcon className="text-[#fed700] h-6 w-6 animate-pulse"/>
-                    <p className="text-xl">anara.zhunusova@appliedtechnology.se</p>
+                    <p className="text-xl">anarikrulit@gmail.com</p>
                 </div>
                 <div className="flex items-center space-x-4 justify-center">
                     <MapPinIcon className="text-[#fed700] h-6 w-6 animate-pulse"/>
-                    <p className="text-xl">Lustgårdsgatan 19, Stockholm</p>
+                    <p className="text-xl">Stockholm</p>
                 </div>
            </div>
 
