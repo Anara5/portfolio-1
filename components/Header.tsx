@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import Link from 'next/link';
-import { SocialIcon } from "react-social-icons";
-import { motion } from "framer-motion";
-import { Social } from "../typings";
+import { SocialIcon } from 'react-social-icons';
+import { motion } from 'framer-motion';
+import { Social } from '../typings';
 
 type Props = {
     socials: Social[];
