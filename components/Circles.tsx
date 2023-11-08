@@ -48,4 +48,4 @@ function Circles({ pageInfo }: Props) {
   )
 }
 
-export default Circles
+export default Circles;
