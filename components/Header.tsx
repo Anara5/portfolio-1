@@ -14,13 +14,11 @@ export default function Header({ socials }: Props) {
     xl:items-center">
         <motion.div
         initial={{
-            y: -200,
             x: -400,
             opacity: 0,
             scale: 0.5
         }}
         animate={{
-            y: 0,
             x: 0,
             opacity: 1,
             scale: 1
@@ -43,13 +41,11 @@ export default function Header({ socials }: Props) {
         <Link href="#contact">
             <motion.div
             initial={{
-                y: 200,
                 x: 400,
                 opacity: 0,
                 scale: 0.5
             }}
             animate={{
-                y: 0,
                 x: 0,
                 opacity: 1,
                 scale: 1
