@@ -2,9 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import { PageInfo } from '../typings';
-import dynamic from 'next/dynamic';
-
-const DynamicCircles = dynamic(() => import('../components/Circles'), { ssr: false });
+import Circles from './Circles';
 
 type Props = {
     pageInfo: PageInfo
@@ -24,7 +22,7 @@ export default function Hero({ pageInfo }: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center p-5">
         
-        <DynamicCircles pageInfo={pageInfo}/>
+        <Circles pageInfo={pageInfo}/>
 
         <div>
             <h1 className="text-[#fed700] text-3xl lg:text-6xl font-semibold px-10">
