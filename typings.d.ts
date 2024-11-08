@@ -46,8 +46,8 @@ export interface Project extends SanityBody {
     title: string;
     image: Image;
     summary: string;
-    linkToGitHub?: string;
-    linkToLive?: string;
+    linkToGitHub: string;
+    linkToLive: string;
     technologies: Tech[];
 }
 
