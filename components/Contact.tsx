@@ -14,7 +14,7 @@ type Inputs = {
 function Contact({}: Props) {
     const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = formData => {
-        window.location.href = `mailto:anarikrulit@gmail.com?subject=
+        window.location.href = `mailto:anarazhunusova88@gmail.com?subject=
         ${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}. 
         ${formData.email}`;
     }
@@ -33,7 +33,7 @@ function Contact({}: Props) {
            <div className="space-y-5">
                 <div className="flex items-center space-x-4 justify-center">
                     <EnvelopeIcon className="text-[#fed700] h-6 w-6 animate-pulse"/>
-                    <p className="text-xl">anarikrulit@gmail.com</p>
+                    <p className="text-xl">anarazhunusova88@gmail.com</p>
                 </div>
                 <div className="flex items-center space-x-4 justify-center">
                     <MapPinIcon className="text-[#fed700] h-6 w-6 animate-pulse"/>
