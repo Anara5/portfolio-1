@@ -27,24 +27,13 @@ const ProjectsCard = ({ project }: Props) => {
         </div>
         <div>
             {project.linkToGitHub && (
-                <a
-                className="projectButton cursor-pointer"
-                href={project.linkToGitHub}
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <span>GitHub</span>
+                <a className="projectButton cursor-pointer" href={project.linkToGitHub}>
+                    <span>GitHub</span>
                 </a>
             )}
-
             {project.linkToLive && (
-                <a
-                className="projectButton cursor-pointer"
-                href={project.linkToLive}
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <span>Live</span>
+                <a className="projectButton cursor-pointer" href={project.linkToLive}>
+                    <span>Live</span>
                 </a>
             )}
         </div>
