@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Tech } from '../typings';
 import { urlFor } from '../sanity';
+import Image from 'next/image';
 
 type Props = {
     directionLeft?: boolean;
@@ -25,7 +26,7 @@ const TechImage = ({ directionLeft, tech}: Props) => {
         className="group relative flex p-3">
 
         <div className="relative mb-3 flex flex-col">
-            <img style={{width: "50px", height: "auto"}} alt={tech.title} src={urlFor(tech.image).url()} srcSet="" />
+            <Image width={50} height={50} alt={tech.title} src={urlFor(tech.image).url()} />
         </div>
         
         <div className="absolute left-0 bottom-0 w-[100%] flex flex-col items-center justify-center">

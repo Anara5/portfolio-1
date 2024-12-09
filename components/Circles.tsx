@@ -4,6 +4,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { PageInfo } from "../typings";
 import { urlFor } from "../sanity";
+import Image from "next/image";
 
 type Props = {
     pageInfo: PageInfo;
@@ -82,7 +83,7 @@ function Circles({ pageInfo }: Props) {
                 </Canvas>
             </div>
             <div className="absolute h-[150px] w-[150px] object-cover top-[15rem] z-[10]">
-                <img src={urlFor(pageInfo?.heroImage).url()} alt="Hero" />
+                <Image src={urlFor(pageInfo?.heroImage).url()} alt="Hero" layout="fill" />
             </div>
         </div>
     );

@@ -26,12 +26,12 @@ export default function Hero({ pageInfo }: Props) {
         <Circles pageInfo={pageInfo} />
 
         <div>
-            <h1 className="text-[#fed700] text-3xl lg:text-6xl font-semibold px-10">
+            <h1 className="text-[#fed700] text-3xl lg:text-6xl font-semibold px-5">
             <span className="mr-3">{text}</span>
             <Cursor cursorColor="#fed700" />
             </h1>
         </div>
-        <div className="pt-5">
+        <div className="pt-5 flex flex-wrap justify-center">
             <Link href="#about">
                 <button className="heroButton">About</button>
             </Link>
