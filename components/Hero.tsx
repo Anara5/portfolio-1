@@ -9,6 +9,7 @@ type Props = {
 }
 
 export default function Hero({ pageInfo }: Props) {
+
     const [text, count] = useTypewriter({
         words: [
             `Hi, my name is ${pageInfo.name}`, 
@@ -22,7 +23,7 @@ export default function Hero({ pageInfo }: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center p-5">
         
-        <Circles pageInfo={pageInfo}/>
+        <Circles pageInfo={pageInfo} />
 
         <div>
             <h1 className="text-[#fed700] text-3xl lg:text-6xl font-semibold px-10">
