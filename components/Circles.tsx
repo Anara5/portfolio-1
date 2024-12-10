@@ -69,7 +69,7 @@ function Circles({ pageInfo }: Props) {
     };
 
     return (
-        <div className="relative flex justify-center w-full h-screen">
+        <div className="relative flex justify-center w-[100%] h-[60%]">
             <div
                 onMouseMove={handleMouseMove}
                 className="absolute w-full h-full"
